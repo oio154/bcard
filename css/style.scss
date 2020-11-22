@@ -1,0 +1,34 @@
+@import "_globals";
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Regular.ttf');
+  }
+
+  
+
+
+  html,body, body *{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    width: 100%; 
+  }
+
+  .vermillion-part{
+    background: $vermillion;
+    //transform: rotate(20deg);
+    //transform: skewY(-5deg);
+    position: realtive;
+    //margin-top: 300px;
+    //height: 200px;
+    height: 40vh;
+    border-bottom: 20vh solid white;
+    border-left: 100vw solid transparent;
+  }
