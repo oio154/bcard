@@ -19,9 +19,71 @@ body {
 
 .vermillion-part {
   background: #e34234;
-  position: realtive;
-  height: 40vh;
-  border-bottom: 20vh solid white;
-  border-left: 100vw solid transparent;
+  position: relative;
+  padding-top: 6rem;
+  padding-bottom: 12rem;
+  overflow: visible;
+  z-index: 1;
+  color: white;
+  font-size: 5rem;
+}
+
+.vermillion-part > div {
+  text-align: center;
+}
+
+.vermillion-part:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  bottom: 0;
+  -webkit-transform-origin: right bottom;
+          transform-origin: right bottom;
+  -webkit-transform: skewY(-5deg);
+          transform: skewY(-5deg);
+}
+
+.vermillion-after-slant {
+  z-index: 4;
+  position: relative;
+  -webkit-transform-origin: right bottom;
+          transform-origin: right bottom;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  text-align: right;
+  color: #e34234;
+  font-size: .8rem;
+  margin-right: 3px;
+  -webkit-animation-name: whitetovermillion;
+          animation-name: whitetovermillion;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+
+@-webkit-keyframes whitetovermillion {
+  0% {
+    color: white;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: #e34234;
+  }
+}
+
+@keyframes whitetovermillion {
+  0% {
+    color: white;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: #e34234;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -23,12 +23,45 @@
 
   .vermillion-part{
     background: $vermillion;
-    //transform: rotate(20deg);
-    //transform: skewY(-5deg);
-    position: realtive;
-    //margin-top: 300px;
-    //height: 200px;
-    height: 40vh;
-    border-bottom: 20vh solid white;
-    border-left: 100vw solid transparent;
+    position: relative;
+    padding-top: 6rem;
+    padding-bottom: 12rem;
+    overflow: visible;
+    z-index: 1;
+    color: white;
+    font-size: 5rem;
+
+    &>div{
+      text-align: center;
+    }
+  }
+  .vermillion-part:after{
+    content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  bottom: 0;
+  transform-origin: right bottom;
+  transform: skewY(-5deg);
+  }
+  .vermillion-after-slant{
+    //background: lime;
+    z-index: 4;
+    position: relative;
+    transform-origin: right bottom;
+    transform: rotate(-5deg);
+    text-align: right;
+    color: $vermillion;
+    font-size: .8rem;
+    margin-right: 3px;
+    animation-name: whitetovermillion;
+    animation-duration: 6s;
+    
+  }
+  @keyframes whitetovermillion{
+    0%{color: white;}
+    50%{color: white;}
+    100%{color: $vermillion;}
   }
