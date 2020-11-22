@@ -65,3 +65,27 @@
     50%{color: white;}
     100%{color: $vermillion;}
   }
+
+
+  .card-wrap{
+    
+    z-index: 10;
+    position: relative;
+
+    .card{
+      background: blue;
+      margin: 0 auto;
+      display: block;
+      width: 40vw;
+      height: 20vw;
+      top: -5vw;
+      position: relative;
+      border-radius: 21px;
+      overflow: hidden;
+      background: #9a286d;
+      background: rgb(154,40,109);
+      background: linear-gradient(61deg, #e552f7 5%, #c8559b 42%, #af2278 100%);
+    }
+
+
+  }
